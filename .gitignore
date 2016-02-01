@@ -1,0 +1,5 @@
+*.s#*
+*.b#*
+*.pro
+*.log
+.DS_Store
