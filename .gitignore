@@ -2,4 +2,5 @@
 *.b#*
 *.pro
 *.log
+*.l#*
 .DS_Store

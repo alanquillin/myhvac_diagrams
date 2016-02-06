@@ -350,6 +350,7 @@ UsedLibrary="/Users/alanquillin/Documents/eagle/Libraries/Adafruit/adafruit.lbr"
 UsedLibrary="/Users/alanquillin/Documents/eagle/Libraries/SparkFun/SparkFun-LED.lbr"
 UsedLibrary="/Users/alanquillin/Documents/eagle/Libraries/chiengineer/LEDs/led_rgb.lbr"
 UsedLibrary="/Users/alanquillin/Documents/eagle/Libraries/eagle/led_rgb.lbr"
+UsedLibrary="/Users/alanquillin/Documents/eagle/Libraries/Element14/3M/3M_By_element14_Batch_1.lbr"
 
 [Desktop]
 Screen="6560 1440"

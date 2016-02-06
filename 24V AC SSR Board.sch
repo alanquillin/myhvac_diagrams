@@ -4956,7 +4956,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="-30.48" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="OK4" gate="-1" pin="A2"/>
-<junction x="40.64" y="-30.48"/>
 <wire x1="40.64" y1="-30.48" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
