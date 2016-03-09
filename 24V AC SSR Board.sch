@@ -63,6 +63,9 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -81,12 +84,33 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
@@ -112,9 +136,19 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -4617,6 +4651,76 @@ Source: http://eshop.phoenixcontact.com .. 1751293.pdf</description>
 <rectangle x1="1.94" y1="2.22" x2="2.7" y2="2.48" layer="21"/>
 <rectangle x1="1.68" y1="0.84" x2="2.98" y2="2.22" layer="21"/>
 </package>
+<package name="6-POS-SCREW-TERM-PT-3.5MM">
+<description>&lt;b&gt;MKDS 1/ 7-3,5&lt;/b&gt; Printklemme&lt;p&gt;
+Nennstrom: 10 A&lt;br&gt;
+Bemessungsspannung: 160 V&lt;br&gt;
+Raster: 3,5 mm&lt;br&gt;
+Polzahl: 7&lt;br&gt;
+Montageart: Löten&lt;br&gt;
+Anschlussart: Schraubanschluss&lt;br&gt;
+Anschlussrichtung vom Leiter zur Platine: 0°&lt;br&gt;
+Source: http://eshop.phoenixcontact.com .. 1751293.pdf</description>
+<wire x1="-12.25" y1="3.65" x2="8.75" y2="3.65" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="3.65" x2="-12.25" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="8.75" y1="-2.0993" x2="-12.25" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="1.9123" x2="-12.25" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="1.9123" x2="8.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="-1.6163" x2="-12.25" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="8.75" y1="1.4367" x2="-12.25" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="-1.6163" x2="8.75" y2="-1.6163" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="-1.6163" x2="-12.25" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="-2.0993" x2="-12.25" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-11.706" y1="-0.811" x2="-9.789" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="8.75" y1="-2.911" x2="-12.25" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="-3.65" x2="8.75" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="-3.35" x2="8.75" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="-3.35" x2="-12.25" y2="-3.65" width="0.1016" layer="21"/>
+<wire x1="-12.25" y1="-2.911" x2="-12.25" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="-9.3" y1="0.605" x2="-11.211" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="-8.206" y1="-0.811" x2="-6.289" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="-5.8" y1="0.605" x2="-7.711" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="-4.706" y1="-0.811" x2="-2.789" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="-2.3" y1="0.605" x2="-4.211" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="-1.206" y1="-0.811" x2="0.711" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="1.2" y1="0.605" x2="-0.711" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="2.294" y1="-0.811" x2="4.211" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="4.7" y1="0.605" x2="2.789" y2="-1.306" width="0.1016" layer="51"/>
+<wire x1="5.794" y1="-0.811" x2="7.711" y2="1.106" width="0.1016" layer="51"/>
+<wire x1="8.2" y1="0.605" x2="6.289" y2="-1.306" width="0.1016" layer="51"/>
+<circle x="-10.5" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="-7" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="-3.5" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="0" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="3.5" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<circle x="7" y="-0.1" radius="1.45" width="0.1016" layer="21"/>
+<pad name="1" x="-10.5" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="2" x="-7" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="3" x="-3.5" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="4" x="0" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="5" x="3.5" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<pad name="6" x="7" y="-0.1" drill="1.1" diameter="1.7" rot="R90"/>
+<text x="-10.95" y="2.2225" size="1.27" layer="21" font="vector">1</text>
+<text x="-7.4575" y="2.2225" size="1.27" layer="21" font="vector">2</text>
+<text x="-3.965" y="2.2225" size="1.27" layer="21" font="vector">3</text>
+<text x="-0.4725" y="2.2225" size="1.27" layer="21" font="vector">4</text>
+<text x="3.02" y="2.2225" size="1.27" layer="21" font="vector">5</text>
+<text x="6.5125" y="2.2225" size="1.27" layer="21" font="vector">6</text>
+<text x="-12.855" y="-2.8575" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-5.5525" y="4.1275" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.1016" layer="21">
+<vertex x="-11.6525" y="-2.8575"/>
+<vertex x="-11.97" y="-2.2225"/>
+<vertex x="-11.335" y="-2.2225"/>
+</polygon>
+<wire x1="8.75" y1="-3.65" x2="8.75" y2="-3.35" width="0.1016" layer="21"/>
+<wire x1="8.75" y1="-3.35" x2="8.75" y2="-2.911" width="0.1016" layer="21"/>
+<wire x1="8.75" y1="-2.911" x2="8.75" y2="-2.0993" width="0.1016" layer="21"/>
+<wire x1="8.75" y1="-2.0993" x2="8.75" y2="-1.6163" width="0.1016" layer="21"/>
+<wire x1="8.75" y1="-1.6163" x2="8.75" y2="1.4367" width="0.1016" layer="21"/>
+<wire x1="8.75" y1="1.4367" x2="8.75" y2="1.9123" width="0.1016" layer="21"/>
+<wire x1="8.75" y1="1.9123" x2="8.75" y2="3.65" width="0.1016" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPTO-ISO-DARLINGTON">
@@ -4873,6 +4977,31 @@ for use in general purpose bidirectional switching and phase control application
 </device>
 </devices>
 </deviceset>
+<deviceset name="6-POS-SCREW-TERM-PT-3.5MM">
+<gates>
+<gate name="G$1" symbol="SCHRAUBKLEMME" x="-5.08" y="10.16" addlevel="always"/>
+<gate name="G$2" symbol="SCHRAUBKLEMME" x="-5.08" y="5.08" addlevel="always"/>
+<gate name="G$3" symbol="SCHRAUBKLEMME" x="-5.08" y="0" addlevel="always"/>
+<gate name="G$4" symbol="SCHRAUBKLEMME" x="-5.08" y="-5.08" addlevel="always"/>
+<gate name="G$5" symbol="SCHRAUBKLEMME" x="-5.08" y="-10.16" addlevel="always"/>
+<gate name="G$6" symbol="SCHRAUBKLEMME" x="-5.08" y="-15.24" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="6-POS-SCREW-TERM-PT-3.5MM">
+<connects>
+<connect gate="G$1" pin="K" pad="1"/>
+<connect gate="G$2" pin="K" pad="2"/>
+<connect gate="G$3" pin="K" pad="3"/>
+<connect gate="G$4" pin="K" pad="4"/>
+<connect gate="G$5" pin="K" pad="5"/>
+<connect gate="G$6" pin="K" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -4916,7 +5045,7 @@ for use in general purpose bidirectional switching and phase control application
 <part name="R17" library="rcl" deviceset="R-US_" device="0204/7" value="2.2K"/>
 <part name="D5" library="diode" deviceset="1N4004" device="" value="1N4001"/>
 <part name="LED_OUT_A" library="led" deviceset="LED" device="3MM" value="Blue"/>
-<part name="TERM" library="con-wago-500" deviceset="W237-6" device=""/>
+<part name="TERM" library="con-wago-500" deviceset="W237-6" device="" value="OUT BLOCK"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -4942,10 +5071,10 @@ for use in general purpose bidirectional switching and phase control application
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="R18" library="rcl" deviceset="R-US_" device="0204/7" value="4.7K"/>
-<part name="R19" library="rcl" deviceset="R-US_" device="0204/7" value="4.7K"/>
-<part name="R20" library="rcl" deviceset="R-US_" device="0204/7" value="4.7K"/>
-<part name="R21" library="rcl" deviceset="R-US_" device="0204/7" value="4.7K"/>
+<part name="R18" library="rcl" deviceset="R-US_" device="0204/7" value="100K"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="0204/7" value="100K"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="0204/7" value="100K"/>
+<part name="R21" library="rcl" deviceset="R-US_" device="0204/7" value="100K"/>
 <part name="U$5" library="myhvac" deviceset="TLP525G−4" device=""/>
 <part name="U$6" library="myhvac" deviceset="TLP525G−4" device=""/>
 <part name="X1" library="myhvac" deviceset="1751293" device=""/>
@@ -4954,13 +5083,16 @@ for use in general purpose bidirectional switching and phase control application
 <part name="TRIAC-1" library="myhvac" deviceset="BT134" device="" value="BT134"/>
 <part name="TRIAC-2" library="myhvac" deviceset="BT134" device="" value="BT134"/>
 <part name="TRIAC-3" library="myhvac" deviceset="BT134" device="" value="BT134"/>
+<part name="T3-" library="myhvac" deviceset="6-POS-SCREW-TERM-PT-3.5MM" device="" value=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-88.9" y="38.1" size="1.778" layer="91">40 Pin Connector From Raspberry Pi</text>
-<text x="172.72" y="58.42" size="1.778" layer="91">6 POS Block to HVAC</text>
-<text x="175.26" y="7.62" size="1.778" layer="91">24V Source Power Indicator</text>
+<text x="-101.6" y="76.2" size="1.778" layer="91">40 Pin Connector From Raspberry Pi</text>
+<text x="-78.74" y="-40.64" size="1.778" layer="91">6 POS Block to HVAC</text>
+<text x="-88.9" y="-7.62" size="1.778" layer="91">24V Source Power Indicator</text>
+<text x="-167.64" y="76.2" size="1.778" layer="91">14 POS input block</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="48.26" y="71.12"/>
@@ -4975,15 +5107,15 @@ for use in general purpose bidirectional switching and phase control application
 <instance part="R7" gate="G$1" x="10.16" y="60.96"/>
 <instance part="R8" gate="G$1" x="10.16" y="20.32"/>
 <instance part="R9" gate="G$1" x="10.16" y="-25.4"/>
-<instance part="R10" gate="G$1" x="180.34" y="-5.08"/>
+<instance part="R10" gate="G$1" x="-83.82" y="-20.32"/>
 <instance part="R11" gate="G$1" x="78.74" y="71.12"/>
 <instance part="R12" gate="G$1" x="76.2" y="30.48"/>
 <instance part="R13" gate="G$1" x="76.2" y="-15.24"/>
-<instance part="LED4" gate="G$1" x="195.58" y="-5.08" rot="MR270"/>
+<instance part="LED4" gate="G$1" x="-68.58" y="-20.32" rot="MR270"/>
 <instance part="LED_OUT_W" gate="G$1" x="91.44" y="71.12" rot="MR270"/>
 <instance part="LED_OUT_G" gate="G$1" x="88.9" y="30.48" rot="MR270"/>
 <instance part="LED_OUT_Y" gate="G$1" x="88.9" y="-15.24" rot="MR270"/>
-<instance part="D1" gate="1" x="195.58" y="2.54" rot="MR0"/>
+<instance part="D1" gate="1" x="-68.58" y="-12.7" rot="MR0"/>
 <instance part="D2" gate="1" x="93.98" y="78.74" rot="MR0"/>
 <instance part="D3" gate="1" x="91.44" y="38.1" rot="MR0"/>
 <instance part="D4" gate="1" x="91.44" y="-7.62" rot="MR0"/>
@@ -4994,22 +5126,22 @@ for use in general purpose bidirectional switching and phase control application
 <instance part="R17" gate="G$1" x="78.74" y="-60.96"/>
 <instance part="D5" gate="1" x="93.98" y="-53.34" rot="MR0"/>
 <instance part="LED_OUT_A" gate="G$1" x="91.44" y="-60.96" rot="MR270"/>
-<instance part="TERM" gate="-1" x="187.96" y="53.34" rot="R180"/>
-<instance part="TERM" gate="-2" x="187.96" y="48.26" rot="R180"/>
-<instance part="TERM" gate="-3" x="187.96" y="43.18" rot="MR0"/>
-<instance part="TERM" gate="-4" x="187.96" y="38.1" rot="MR0"/>
-<instance part="TERM" gate="-5" x="187.96" y="33.02" rot="MR0"/>
-<instance part="TERM" gate="-6" x="187.96" y="27.94" rot="MR0"/>
-<instance part="GND1" gate="1" x="-48.26" y="27.94" rot="R180"/>
+<instance part="TERM" gate="-1" x="-63.5" y="-45.72" rot="R180"/>
+<instance part="TERM" gate="-2" x="-63.5" y="-50.8" rot="R180"/>
+<instance part="TERM" gate="-3" x="-63.5" y="-55.88" rot="MR0"/>
+<instance part="TERM" gate="-4" x="-63.5" y="-60.96" rot="MR0"/>
+<instance part="TERM" gate="-5" x="-63.5" y="-66.04" rot="MR0"/>
+<instance part="TERM" gate="-6" x="-63.5" y="-71.12" rot="MR0"/>
+<instance part="GND1" gate="1" x="-60.96" y="66.04" rot="R180"/>
 <instance part="GND2" gate="1" x="20.32" y="-76.2"/>
 <instance part="GND3" gate="1" x="17.78" y="-30.48"/>
 <instance part="GND4" gate="1" x="17.78" y="15.24"/>
 <instance part="GND5" gate="1" x="17.78" y="55.88"/>
-<instance part="IN" gate="A" x="-71.12" y="2.54"/>
-<instance part="GND" gate="1" x="-101.6" y="27.94" rot="R180"/>
-<instance part="GND7" gate="1" x="-91.44" y="-33.02"/>
-<instance part="24V" gate="+24V" x="170.18" y="-5.08" rot="R90"/>
-<instance part="COM" gate="1" x="215.9" y="-5.08" rot="R90"/>
+<instance part="IN" gate="A" x="-83.82" y="40.64"/>
+<instance part="GND" gate="1" x="-114.3" y="66.04" rot="R180"/>
+<instance part="GND7" gate="1" x="-104.14" y="5.08"/>
+<instance part="24V" gate="+24V" x="-93.98" y="-20.32" rot="R90"/>
+<instance part="COM" gate="1" x="-50.8" y="-20.32" rot="R90"/>
 <instance part="COM1" gate="1" x="109.22" y="71.12" rot="R90"/>
 <instance part="COM2" gate="1" x="106.68" y="30.48" rot="R90"/>
 <instance part="COM3" gate="1" x="106.68" y="-15.24" rot="R90"/>
@@ -5018,8 +5150,8 @@ for use in general purpose bidirectional switching and phase control application
 <instance part="24V2" gate="+24V" x="55.88" y="-10.16"/>
 <instance part="24V3" gate="+24V" x="58.42" y="-55.88"/>
 <instance part="24V4" gate="+24V" x="55.88" y="76.2"/>
-<instance part="24V5" gate="+24V" x="177.8" y="27.94" rot="R90"/>
-<instance part="AUX_OUT" gate="1" x="177.8" y="53.34" rot="R270"/>
+<instance part="24V5" gate="+24V" x="-73.66" y="-71.12" rot="R90"/>
+<instance part="AUX_OUT" gate="1" x="-73.66" y="-45.72" rot="R270"/>
 <instance part="OPTO-ISO" gate="G$1" x="114.3" y="55.88"/>
 <instance part="OPTO-ISO" gate="G$2" x="111.76" y="15.24"/>
 <instance part="OPTO-ISO" gate="G$3" x="111.76" y="-30.48"/>
@@ -5036,25 +5168,32 @@ for use in general purpose bidirectional switching and phase control application
 <instance part="U$5" gate="G$2" x="33.02" y="25.4"/>
 <instance part="U$6" gate="G$1" x="33.02" y="-20.32"/>
 <instance part="U$6" gate="G$2" x="35.56" y="-66.04"/>
-<instance part="X1" gate="-8" x="-96.52" y="-96.52"/>
-<instance part="X1" gate="-1" x="-96.52" y="-43.18"/>
-<instance part="X1" gate="-2" x="-96.52" y="-50.8"/>
-<instance part="X1" gate="-3" x="-96.52" y="-58.42"/>
-<instance part="X1" gate="-4" x="-96.52" y="-66.04"/>
-<instance part="X1" gate="-5" x="-96.52" y="-73.66"/>
-<instance part="X1" gate="-6" x="-96.52" y="-81.28"/>
-<instance part="X1" gate="-7" x="-96.52" y="-88.9"/>
-<instance part="X1" gate="-9" x="-96.52" y="-104.14"/>
-<instance part="X1" gate="-10" x="-96.52" y="-111.76"/>
-<instance part="X1" gate="-11" x="-96.52" y="-119.38"/>
-<instance part="X1" gate="-12" x="-96.52" y="-127"/>
-<instance part="X1" gate="-13" x="-96.52" y="-134.62"/>
-<instance part="X1" gate="-14" x="-96.52" y="-142.24"/>
-<instance part="GND11" gate="1" x="-104.14" y="-50.8" rot="R270"/>
+<instance part="X1" gate="-8" x="-157.48" y="15.24"/>
+<instance part="X1" gate="-1" x="-157.48" y="68.58"/>
+<instance part="X1" gate="-2" x="-157.48" y="60.96"/>
+<instance part="X1" gate="-3" x="-157.48" y="53.34"/>
+<instance part="X1" gate="-4" x="-157.48" y="45.72"/>
+<instance part="X1" gate="-5" x="-157.48" y="38.1"/>
+<instance part="X1" gate="-6" x="-157.48" y="30.48"/>
+<instance part="X1" gate="-7" x="-157.48" y="22.86"/>
+<instance part="X1" gate="-9" x="-157.48" y="7.62"/>
+<instance part="X1" gate="-10" x="-157.48" y="0"/>
+<instance part="X1" gate="-11" x="-157.48" y="-7.62"/>
+<instance part="X1" gate="-12" x="-157.48" y="-15.24"/>
+<instance part="X1" gate="-13" x="-157.48" y="-22.86"/>
+<instance part="X1" gate="-14" x="-157.48" y="-30.48"/>
+<instance part="GND11" gate="1" x="-165.1" y="60.96" rot="R270"/>
 <instance part="TRIAC-4" gate="TRIAC$1" x="66.04" y="-60.96" rot="R90"/>
 <instance part="TRIAC-1" gate="TRIAC$1" x="66.04" y="71.12" rot="R90"/>
 <instance part="TRIAC-2" gate="TRIAC$1" x="63.5" y="30.48" rot="R90"/>
 <instance part="TRIAC-3" gate="TRIAC$1" x="63.5" y="-15.24" rot="R90"/>
+<instance part="T3-" gate="G$1" x="-139.7" y="-48.26"/>
+<instance part="T3-" gate="G$2" x="-139.7" y="-53.34"/>
+<instance part="T3-" gate="G$3" x="-139.7" y="-58.42"/>
+<instance part="T3-" gate="G$4" x="-139.7" y="-63.5"/>
+<instance part="T3-" gate="G$5" x="-139.7" y="-68.58"/>
+<instance part="T3-" gate="G$6" x="-139.7" y="-73.66"/>
+<instance part="GND12" gate="1" x="-147.32" y="-58.42" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5112,8 +5251,8 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="TERM" gate="-4" pin="KL"/>
-<wire x1="182.88" y1="38.1" x2="180.34" y2="38.1" width="0.1524" layer="91"/>
-<label x="180.34" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-68.58" y1="-60.96" x2="-71.12" y2="-60.96" width="0.1524" layer="91"/>
+<label x="-71.12" y="-60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GREEN_OUT" class="0">
@@ -5127,8 +5266,8 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="TERM" gate="-3" pin="KL"/>
-<wire x1="182.88" y1="43.18" x2="180.34" y2="43.18" width="0.1524" layer="91"/>
-<label x="180.34" y="43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-68.58" y1="-55.88" x2="-71.12" y2="-55.88" width="0.1524" layer="91"/>
+<label x="-71.12" y="-55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="WHITE_OUT" class="0">
@@ -5143,8 +5282,8 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="TERM" gate="-2" pin="KL"/>
-<wire x1="182.88" y1="48.26" x2="180.34" y2="48.26" width="0.1524" layer="91"/>
-<label x="180.34" y="48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-68.58" y1="-50.8" x2="-71.12" y2="-50.8" width="0.1524" layer="91"/>
+<label x="-71.12" y="-50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GREEN_IN" class="0">
@@ -5160,21 +5299,21 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="IN" gate="A" pin="33"/>
-<wire x1="-88.9" y1="-17.78" x2="-93.98" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-93.98" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-101.6" y1="20.32" x2="-106.68" y2="20.32" width="0.1524" layer="91"/>
+<label x="-106.68" y="20.32" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="IN" gate="A" pin="36"/>
-<wire x1="-53.34" y1="-20.32" x2="-63.5" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="-20.32" x2="-66.04" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-17.78" x2="-88.9" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="-88.9" y="-17.78"/>
+<wire x1="-66.04" y1="17.78" x2="-76.2" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="17.78" x2="-78.74" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="20.32" x2="-101.6" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-101.6" y="20.32"/>
 </segment>
 <segment>
 <pinref part="X1" gate="-10" pin="K"/>
-<wire x1="-101.6" y1="-111.76" x2="-99.06" y2="-111.76" width="0.1524" layer="91"/>
-<label x="-101.6" y="-111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-162.56" y1="0" x2="-160.02" y2="0" width="0.1524" layer="91"/>
+<label x="-162.56" y="0" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="X1" gate="-9" pin="K"/>
-<wire x1="-101.6" y1="-104.14" x2="-99.06" y2="-104.14" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="-111.76" x2="-101.6" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="7.62" x2="-160.02" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="0" x2="-162.56" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -5268,8 +5407,8 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="TERM" gate="-5" pin="KL"/>
-<wire x1="182.88" y1="33.02" x2="180.34" y2="33.02" width="0.1524" layer="91"/>
-<label x="180.34" y="33.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-68.58" y1="-66.04" x2="-71.12" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-71.12" y="-66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -5287,13 +5426,13 @@ for use in general purpose bidirectional switching and phase control application
 <net name="N$24" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="-5.08" x2="187.96" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-20.32" x2="-76.2" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="C"/>
-<wire x1="193.04" y1="2.54" x2="187.96" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="2.54" x2="187.96" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="-12.7" x2="-76.2" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="-12.7" x2="-76.2" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="193.04" y1="-5.08" x2="187.96" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="187.96" y="-5.08"/>
+<wire x1="-71.12" y1="-20.32" x2="-76.2" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-76.2" y="-20.32"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5328,25 +5467,25 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-48.26" y1="-12.7" x2="-48.26" y2="0" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="25.4" x2="-60.96" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="IN" gate="A" pin="30"/>
-<wire x1="-48.26" y1="0" x2="-48.26" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="7.62" x2="-48.26" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="17.78" x2="-48.26" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="-12.7" x2="-48.26" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="38.1" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="45.72" x2="-60.96" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="55.88" x2="-60.96" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="25.4" x2="-60.96" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IN" gate="A" pin="34"/>
-<wire x1="-53.34" y1="-17.78" x2="-48.26" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="-17.78" x2="-48.26" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="-48.26" y="-12.7"/>
+<wire x1="-66.04" y1="20.32" x2="-60.96" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="20.32" x2="-60.96" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-60.96" y="25.4"/>
 <pinref part="IN" gate="A" pin="20"/>
-<wire x1="-53.34" y1="0" x2="-48.26" y2="0" width="0.1524" layer="91"/>
-<junction x="-48.26" y="0"/>
+<wire x1="-66.04" y1="38.1" x2="-60.96" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-60.96" y="38.1"/>
 <pinref part="IN" gate="A" pin="14"/>
-<wire x1="-53.34" y1="7.62" x2="-48.26" y2="7.62" width="0.1524" layer="91"/>
-<junction x="-48.26" y="7.62"/>
+<wire x1="-66.04" y1="45.72" x2="-60.96" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-60.96" y="45.72"/>
 <pinref part="IN" gate="A" pin="6"/>
-<wire x1="-53.34" y1="17.78" x2="-48.26" y2="17.78" width="0.1524" layer="91"/>
-<junction x="-48.26" y="17.78"/>
+<wire x1="-66.04" y1="55.88" x2="-60.96" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-60.96" y="55.88"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="2"/>
@@ -5360,18 +5499,18 @@ for use in general purpose bidirectional switching and phase control application
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="IN" gate="A" pin="39"/>
-<wire x1="-91.44" y1="-30.48" x2="-91.44" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="-27.94" x2="-88.9" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="7.62" x2="-104.14" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="10.16" x2="-101.6" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND" gate="1" pin="GND"/>
 <pinref part="IN" gate="A" pin="25"/>
-<wire x1="-101.6" y1="25.4" x2="-101.6" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="12.7" x2="-101.6" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="-7.62" x2="-88.9" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="63.5" x2="-114.3" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="50.8" x2="-114.3" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="30.48" x2="-101.6" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="IN" gate="A" pin="9"/>
-<wire x1="-88.9" y1="12.7" x2="-101.6" y2="12.7" width="0.1524" layer="91"/>
-<junction x="-101.6" y="12.7"/>
+<wire x1="-101.6" y1="50.8" x2="-114.3" y2="50.8" width="0.1524" layer="91"/>
+<junction x="-114.3" y="50.8"/>
 </segment>
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
@@ -5395,21 +5534,26 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="X1" gate="-2" pin="K"/>
-<wire x1="-101.6" y1="-50.8" x2="-99.06" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="60.96" x2="-160.02" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="T3-" gate="G$3" pin="K"/>
+<wire x1="-142.24" y1="-58.42" x2="-144.78" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="WHITE_IN" class="0">
 <segment>
-<wire x1="-96.52" y1="-12.7" x2="-93.98" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-12.7" x2="-91.44" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="25.4" x2="-106.68" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="25.4" x2="-104.14" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IN" gate="A" pin="31"/>
-<wire x1="-91.44" y1="-12.7" x2="-88.9" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-96.52" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
-<junction x="-93.98" y="-12.7"/>
+<wire x1="-104.14" y1="25.4" x2="-101.6" y2="22.86" width="0.1524" layer="91"/>
+<label x="-109.22" y="25.4" size="1.778" layer="95" rot="R180" xref="yes"/>
+<junction x="-106.68" y="25.4"/>
 <pinref part="IN" gate="A" pin="32"/>
-<wire x1="-53.34" y1="-15.24" x2="-88.9" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="-88.9" y="-15.24"/>
+<wire x1="-66.04" y1="22.86" x2="-101.6" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-101.6" y="22.86"/>
 </segment>
 <segment>
 <wire x1="-10.16" y1="71.12" x2="-7.62" y2="71.12" width="0.1524" layer="91"/>
@@ -5423,25 +5567,25 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="X1" gate="-7" pin="K"/>
-<wire x1="-101.6" y1="-88.9" x2="-99.06" y2="-88.9" width="0.1524" layer="91"/>
-<label x="-101.6" y="-88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-162.56" y1="22.86" x2="-160.02" y2="22.86" width="0.1524" layer="91"/>
+<label x="-162.56" y="22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="X1" gate="-8" pin="K"/>
-<wire x1="-101.6" y1="-96.52" x2="-99.06" y2="-96.52" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="-88.9" x2="-101.6" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="15.24" x2="-160.02" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="22.86" x2="-162.56" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="YELLOW_IN" class="0">
 <segment>
 <pinref part="IN" gate="A" pin="35"/>
-<wire x1="-88.9" y1="-20.32" x2="-91.44" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="-20.32" x2="-93.98" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-22.86" x2="-96.52" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-96.52" y="-22.86" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-101.6" y1="17.78" x2="-104.14" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="17.78" x2="-106.68" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="15.24" x2="-109.22" y2="15.24" width="0.1524" layer="91"/>
+<label x="-109.22" y="15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="IN" gate="A" pin="38"/>
-<wire x1="-53.34" y1="-22.86" x2="-66.04" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="-22.86" x2="-68.58" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-20.32" x2="-88.9" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="-88.9" y="-20.32"/>
+<wire x1="-66.04" y1="15.24" x2="-78.74" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="15.24" x2="-81.28" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="17.78" x2="-101.6" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-101.6" y="17.78"/>
 </segment>
 <segment>
 <wire x1="-7.62" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="91"/>
@@ -5455,25 +5599,25 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="X1" gate="-11" pin="K"/>
-<wire x1="-101.6" y1="-119.38" x2="-99.06" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-7.62" x2="-160.02" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-12" pin="K"/>
-<wire x1="-101.6" y1="-127" x2="-99.06" y2="-127" width="0.1524" layer="91"/>
-<label x="-101.6" y="-127" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="-101.6" y1="-119.38" x2="-101.6" y2="-127" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-15.24" x2="-160.02" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-162.56" y="-15.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-162.56" y1="-7.62" x2="-162.56" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AUX_IN" class="0">
 <segment>
 <pinref part="IN" gate="A" pin="37"/>
-<wire x1="-88.9" y1="-22.86" x2="-91.44" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="-22.86" x2="-93.98" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-27.94" x2="-96.52" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-96.52" y="-27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-101.6" y1="15.24" x2="-104.14" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="15.24" x2="-106.68" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="10.16" x2="-109.22" y2="10.16" width="0.1524" layer="91"/>
+<label x="-109.22" y="10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="IN" gate="A" pin="40"/>
-<wire x1="-53.34" y1="-25.4" x2="-68.58" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-25.4" x2="-71.12" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="-22.86" x2="-88.9" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="-88.9" y="-22.86"/>
+<wire x1="-66.04" y1="12.7" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="12.7" x2="-83.82" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="15.24" x2="-101.6" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-101.6" y="15.24"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -5486,19 +5630,18 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="X1" gate="-14" pin="K"/>
-<wire x1="-101.6" y1="-142.24" x2="-99.06" y2="-142.24" width="0.1524" layer="91"/>
-<label x="-101.6" y="-142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-162.56" y1="-30.48" x2="-160.02" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-162.56" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="X1" gate="-13" pin="K"/>
-<wire x1="-101.6" y1="-134.62" x2="-99.06" y2="-134.62" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="-134.62" x2="-101.6" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-22.86" x2="-160.02" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-22.86" x2="-162.56" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+24V" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="-5.08" x2="175.26" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-20.32" x2="-88.9" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="24V" gate="+24V" pin="+24V"/>
-<wire x1="172.72" y1="-5.08" x2="170.18" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="53.34" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
@@ -5538,21 +5681,20 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="TERM" gate="-6" pin="KL"/>
-<wire x1="182.88" y1="27.94" x2="180.34" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-71.12" x2="-71.12" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="24V5" gate="+24V" pin="+24V"/>
 </segment>
 </net>
 <net name="V-" class="0">
 <segment>
 <pinref part="LED4" gate="G$1" pin="C"/>
-<wire x1="200.66" y1="-5.08" x2="208.28" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-63.5" y1="-20.32" x2="-55.88" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="208.28" y1="-5.08" x2="213.36" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="2.54" x2="208.28" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="2.54" x2="208.28" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="208.28" y="-5.08"/>
+<wire x1="-55.88" y1="-20.32" x2="-53.34" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-12.7" x2="-55.88" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="-55.88" y="-20.32"/>
 <pinref part="COM" gate="1" pin="V-"/>
-<wire x1="213.36" y1="-5.08" x2="215.9" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D5" gate="1" pin="A"/>
@@ -5600,7 +5742,7 @@ for use in general purpose bidirectional switching and phase control application
 </segment>
 <segment>
 <pinref part="TERM" gate="-1" pin="KL"/>
-<wire x1="180.34" y1="53.34" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="-45.72" x2="-68.58" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="AUX_OUT" gate="1" pin="V-"/>
 </segment>
 </net>
@@ -5645,38 +5787,6 @@ for use in general purpose bidirectional switching and phase control application
 <wire x1="99.06" y1="60.96" x2="103.124" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3.3V_SOURCE" class="0">
-<segment>
-<pinref part="IN" gate="A" pin="1"/>
-<wire x1="-88.9" y1="22.86" x2="-93.98" y2="22.86" width="0.1524" layer="91"/>
-<label x="-93.98" y="22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<label x="127" y="60.96" size="1.778" layer="95" xref="yes"/>
-<pinref part="OPTO-ISO" gate="G$1" pin="COLLECTOR"/>
-<wire x1="122.936" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="OPTO-ISO" gate="G$2" pin="COLLECTOR"/>
-<wire x1="120.396" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
-<label x="124.46" y="20.32" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="124.46" y1="-25.4" x2="120.396" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="OPTO-ISO" gate="G$3" pin="COLLECTOR"/>
-<label x="124.46" y="-25.4" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="127" y1="-71.12" x2="122.936" y2="-71.12" width="0.1524" layer="91"/>
-<pinref part="OPTO-ISO" gate="G$4" pin="COLLECTOR"/>
-<label x="127" y="-71.12" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-1" pin="K"/>
-<wire x1="-101.6" y1="-43.18" x2="-99.06" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-101.6" y="-43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="OPTO-ISO" gate="G$2" pin="ANNODE"/>
@@ -5707,13 +5817,13 @@ for use in general purpose bidirectional switching and phase control application
 <net name="AUX_FEEDBACK" class="0">
 <segment>
 <pinref part="X1" gate="-3" pin="K"/>
-<wire x1="-101.6" y1="-58.42" x2="-99.06" y2="-58.42" width="0.1524" layer="91"/>
-<label x="-101.6" y="-58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-162.56" y1="53.34" x2="-160.02" y2="53.34" width="0.1524" layer="91"/>
+<label x="-162.56" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IN" gate="A" pin="12"/>
-<wire x1="-53.34" y1="10.16" x2="-45.72" y2="10.16" width="0.1524" layer="91"/>
-<label x="-45.72" y="10.16" size="1.778" layer="95" xref="yes"/>
+<wire x1="-66.04" y1="48.26" x2="-58.42" y2="48.26" width="0.1524" layer="91"/>
+<label x="-58.42" y="48.26" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="127" y1="-78.74" x2="124.46" y2="-78.74" width="0.1524" layer="91"/>
@@ -5729,13 +5839,17 @@ for use in general purpose bidirectional switching and phase control application
 <net name="GREEN_FEEDBACK" class="0">
 <segment>
 <pinref part="X1" gate="-5" pin="K"/>
-<wire x1="-101.6" y1="-73.66" x2="-99.06" y2="-73.66" width="0.1524" layer="91"/>
-<label x="-101.6" y="-73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-162.56" y1="38.1" x2="-160.02" y2="38.1" width="0.1524" layer="91"/>
+<label x="-162.56" y="38.1" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IN" gate="A" pin="18"/>
-<wire x1="-53.34" y1="2.54" x2="-45.72" y2="0" width="0.1524" layer="91"/>
-<label x="-45.72" y="0" size="1.778" layer="95" xref="yes"/>
+<wire x1="-66.04" y1="40.64" x2="-58.42" y2="40.64" width="0.1524" layer="91"/>
+<label x="-55.88" y="38.1" size="1.778" layer="95" xref="yes"/>
+<junction x="-58.42" y="40.64"/>
+<wire x1="-58.42" y1="40.64" x2="-58.42" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-58.42" y="38.1"/>
+<wire x1="-58.42" y1="38.1" x2="-55.88" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OPTO-ISO" gate="G$2" pin="EMITTER"/>
@@ -5751,13 +5865,17 @@ for use in general purpose bidirectional switching and phase control application
 <net name="WHITE_FEEDBACK" class="0">
 <segment>
 <pinref part="X1" gate="-6" pin="K"/>
-<wire x1="-101.6" y1="-81.28" x2="-99.06" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-101.6" y="-81.28" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-162.56" y1="30.48" x2="-160.02" y2="30.48" width="0.1524" layer="91"/>
+<label x="-162.56" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IN" gate="A" pin="22"/>
-<wire x1="-53.34" y1="-2.54" x2="-45.72" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-45.72" y="-5.08" size="1.778" layer="95" xref="yes"/>
+<wire x1="-66.04" y1="35.56" x2="-58.42" y2="35.56" width="0.1524" layer="91"/>
+<label x="-55.88" y="33.02" size="1.778" layer="95" xref="yes"/>
+<junction x="-58.42" y="35.56"/>
+<wire x1="-58.42" y1="35.56" x2="-58.42" y2="33.02" width="0.1524" layer="91"/>
+<junction x="-58.42" y="33.02"/>
+<wire x1="-58.42" y1="33.02" x2="-55.88" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="127" y="53.34" size="1.778" layer="95" xref="yes"/>
@@ -5773,13 +5891,13 @@ for use in general purpose bidirectional switching and phase control application
 <net name="YELLOW_FEEDBACK" class="0">
 <segment>
 <pinref part="X1" gate="-4" pin="K"/>
-<wire x1="-101.6" y1="-66.04" x2="-99.06" y2="-66.04" width="0.1524" layer="91"/>
-<label x="-101.6" y="-66.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-162.56" y1="45.72" x2="-160.02" y2="45.72" width="0.1524" layer="91"/>
+<label x="-162.56" y="45.72" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IN" gate="A" pin="16"/>
-<wire x1="-53.34" y1="5.08" x2="-45.72" y2="5.08" width="0.1524" layer="91"/>
-<label x="-45.72" y="5.08" size="1.778" layer="95" xref="yes"/>
+<wire x1="-66.04" y1="43.18" x2="-58.42" y2="43.18" width="0.1524" layer="91"/>
+<label x="-58.42" y="43.18" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="124.46" y1="-33.02" x2="121.92" y2="-33.02" width="0.1524" layer="91"/>
@@ -5790,6 +5908,99 @@ for use in general purpose bidirectional switching and phase control application
 <junction x="121.92" y="-33.02"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="-38.1" x2="124.46" y2="-38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V-SRC2" class="0">
+<segment>
+<pinref part="T3-" gate="G$1" pin="K"/>
+<wire x1="-142.24" y1="-48.26" x2="-144.78" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-144.78" y="-48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IN" gate="A" pin="17"/>
+<wire x1="-101.6" y1="40.64" x2="-102.87" y2="40.64" width="0.1524" layer="91"/>
+<label x="-102.87" y="40.64" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="T3-" gate="G$4" pin="K"/>
+<wire x1="-142.24" y1="-63.5" x2="-144.78" y2="-63.5" width="0.1524" layer="91"/>
+<label x="-144.78" y="-63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IN" gate="A" pin="3"/>
+<wire x1="-101.6" y1="58.42" x2="-102.87" y2="58.42" width="0.1524" layer="91"/>
+<label x="-102.87" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="T3-" gate="G$5" pin="K"/>
+<wire x1="-142.24" y1="-68.58" x2="-144.78" y2="-68.58" width="0.1524" layer="91"/>
+<label x="-144.78" y="-68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IN" gate="A" pin="5"/>
+<wire x1="-101.6" y1="55.88" x2="-102.87" y2="55.88" width="0.1524" layer="91"/>
+<label x="-102.87" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GCLK" class="0">
+<segment>
+<pinref part="T3-" gate="G$6" pin="K"/>
+<wire x1="-142.24" y1="-73.66" x2="-144.78" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-144.78" y="-73.66" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IN" gate="A" pin="7"/>
+<wire x1="-101.6" y1="53.34" x2="-102.87" y2="53.34" width="0.1524" layer="91"/>
+<label x="-102.87" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="5V-SRC1" class="0">
+<segment>
+<pinref part="IN" gate="A" pin="2"/>
+<wire x1="-66.04" y1="60.96" x2="-64.77" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-64.77" y1="60.96" x2="-64.77" y2="69.85" width="0.1524" layer="91"/>
+<label x="-64.77" y="69.85" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="T3-" gate="G$2" pin="K"/>
+<wire x1="-142.24" y1="-53.34" x2="-144.78" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-144.78" y="-53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="3.3V_SRC1" class="0">
+<segment>
+<pinref part="X1" gate="-1" pin="K"/>
+<wire x1="-162.56" y1="68.58" x2="-160.02" y2="68.58" width="0.1524" layer="91"/>
+<label x="-162.56" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IN" gate="A" pin="1"/>
+<wire x1="-101.6" y1="60.96" x2="-106.68" y2="60.96" width="0.1524" layer="91"/>
+<label x="-106.68" y="60.96" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<label x="127" y="60.96" size="1.778" layer="95" xref="yes"/>
+<pinref part="OPTO-ISO" gate="G$1" pin="COLLECTOR"/>
+<wire x1="122.936" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="OPTO-ISO" gate="G$2" pin="COLLECTOR"/>
+<wire x1="120.396" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
+<label x="124.46" y="20.32" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="124.46" y1="-25.4" x2="120.396" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="OPTO-ISO" gate="G$3" pin="COLLECTOR"/>
+<label x="124.46" y="-25.4" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="127" y1="-71.12" x2="122.936" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="OPTO-ISO" gate="G$4" pin="COLLECTOR"/>
+<label x="127" y="-71.12" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

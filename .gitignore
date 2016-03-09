@@ -3,4 +3,5 @@
 *.pro
 *.log
 *.l#*
+tmp.lbr
 .DS_Store
