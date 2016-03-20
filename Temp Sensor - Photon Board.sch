@@ -1153,7 +1153,7 @@ It provides 0.5A DC output with small SOT-23 package.</description>
 <part name="D1" library="myhvac" deviceset="LED-RGB-CC-THRU" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
-<part name="U$15" library="myhvac" deviceset="R0805" device="" value="50"/>
+<part name="U$15" library="myhvac" deviceset="R0805" device="" value="100"/>
 <part name="U$16" library="myhvac" deviceset="R0805" device="" value="100"/>
 <part name="U$17" library="myhvac" deviceset="R0805" device="" value="100"/>
 <part name="U$12" library="myhvac" deviceset="R0805" device="" value="680"/>
@@ -1404,6 +1404,14 @@ It provides 0.5A DC output with small SOT-23 package.</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,44.45,81.28,U$11,VIN,+5V,,,"/>
+<approved hash="104,1,80.01,81.28,U$11,3V3,N$7,,,"/>
+<approved hash="204,1,80.01,71.12,U$11,VBAT,,,,"/>
+<approved hash="113,1,-50.8,39.8568,U$3,,,,,"/>
+<approved hash="113,1,94.7298,53.34,TEMP-SENSOR-CONN-,,,,,"/>
+<approved hash="113,1,5.3594,30.48,U$1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
